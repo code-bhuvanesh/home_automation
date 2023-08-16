@@ -9,5 +9,6 @@
         "utility": "cpp",
         "ostream": "cpp",
         "type_traits": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
