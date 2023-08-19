@@ -15,12 +15,17 @@ def main():
         # Connect to the target Bluetooth device
         sock.connect((target_device, 1))  # RFCOMM channel 1
 
-        while True:
-            message = input("Enter message to send (or 'exit' to quit): ")
-            if message.lower() == 'exit':
-                break
-            send_message(sock, message)
-            print("Message sent.")
+        # while True:
+            # message = input("Enter message to send (or 'exit' to quit): ")
+            # message += "\n" + input("Enter message to send (or 'exit' to quit): ")
+            # if message.lower() == 'exit':
+            #     break
+        print("sending wifi detials")
+        send_message(sock, "XY9FJBe2bADvNMduSwdzJXVlovzD12Vu\n")
+        send_message(sock, "JioFiber-EgRrr\n")
+        send_message(sock, "deva9840raj\n")
+        # send_message(sock, "deva9840raj")
+        print("Message sent.")
 
         # Close the socket
         sock.close()
