@@ -18,8 +18,10 @@ def main():
         # while True:
             # message = input("Enter message to send (or 'exit' to quit): ")
             # message += "\n" + input("Enter message to send (or 'exit' to quit): ")
-            # if message.lower() == 'exit':
+            # if message.lower() == 'exit': 
             #     break
+        print("connected")
+        input()
         print("sending wifi detials")
         send_message(sock, "XY9FJBe2bADvNMduSwdzJXVlovzD12Vu\n")
         send_message(sock, "JioFiber-EgRrr\n")
